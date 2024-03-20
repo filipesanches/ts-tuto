@@ -1,4 +1,5 @@
 "use strict";
+<<<<<<< HEAD
 const imc = () => {
     const dados = () => {
         const nome = String(prompt('Qual o seu nome?'));
@@ -18,3 +19,10 @@ const imc = () => {
 };
 const pessoa1 = imc();
 console.log(pessoa1.init());
+=======
+function sum(a, b) {
+    const c = a + b;
+    return c;
+}
+sum('1', 2);
+>>>>>>> origin/main
