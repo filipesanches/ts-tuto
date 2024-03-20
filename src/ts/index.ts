@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 type Pessoa = {
   nome: string;
   idade: number;
@@ -29,11 +28,3 @@ const imc = (): { init: () => string } => {
 
 const pessoa1 = imc();
 console.log(pessoa1.init());
-=======
-function sum(a: any, b: any): string {
-  const c = a + b;
-  return c;
-}
-
-sum('1', 2);
->>>>>>> origin/main
