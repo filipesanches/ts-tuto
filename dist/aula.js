@@ -1,19 +1,15 @@
 "use strict";
-class User {
-    constructor(name, balance) {
-        this._name = name;
-        this._balance = balance;
+function printYardSize(house) {
+    var _a;
+    const yardSize = (_a = house.yard) === null || _a === void 0 ? void 0 : _a.sqft;
+    if (yardSize === undefined) {
+        console.log('No yard');
     }
-    depositMoney(amount) {
-        return this._balance += amount;
-    }
-    withdrawMoney(amount) {
-        return this._balance -= amount;
-    }
-    get balance() {
-        return this._balance;
+    else {
+        console.log(`Yard is ${yardSize} sqft`);
     }
 }
-const user = new User('John', 10);
-user.depositMoney(100);
-user.withdrawMoney(50);
+let home = {
+    sqft: 500,
+};
+printYardSize(home);
